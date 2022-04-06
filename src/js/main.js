@@ -20,11 +20,3 @@ window.onclick = function (event) {
 }
 
 
-
-function productSearsh(){
-    const out = document.querySelector("#result").value;
-    const name = document.getElementById("productSearsh").value;
-    console.log(name);
-    out.innerHTML = name
-
-}
