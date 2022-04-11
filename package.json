@@ -1,0 +1,28 @@
+{
+  "name": "qatar_plants",
+  "jest": {
+    "verbose": true
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QatarPlants/Qatar_Plants.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QatarPlants/Qatar_Plants/issues"
+  },
+  "homepage": "https://github.com/QatarPlants/Qatar_Plants#readme",
+  "dependencies": {
+    "jest": "^27.5.1",
+    "jsdom": "^19.0.0",
+    "ts-node": "^10.7.0"
+  }
+}

@@ -34,3 +34,5 @@ function salePrice(percent, cost){
     price = cost  - (percent/100 *cost)
     return price
 }
+
+module.exports = { salePrice, Sales}
