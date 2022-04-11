@@ -1,4 +1,5 @@
-import addToCart from './cart'
+
+// export {addToCart} from './product'
 
 let Products = [
     {
@@ -26,13 +27,15 @@ let Products = [
 
 console.log(Products);
 
+
+
 function showResult() {
     const out = document.querySelector("#result");
     //const totalCost = document.querySelector("#totalCost");
     let result = ``;
-
+    let Carts= []
     Products.map((x) => result += `<div class="card" style="width:31%; float: left; margin-left:15px; margin-top: 10px" ><img class="card-img-top" src="${x.image}" alt="Card image" width="100%" height="400px"><div class="card-body">
-            <h4 class="card-title">${x.name} <a href="#" class="btn btn-primary stretched-link" onclick="${addToCart(x.id)}">Buy</a> </h4><p class="card-text"> 
+            <h4 class="card-title">${x.name} <a href="#" class="btn btn-primary stretched-link" onclick="addToCart(${x.id})">Buy</a> </h4><p class="card-text"> 
 ${x.category}   ${x.cost}$    ${x.status}</p>
 
         </div></div>`)
@@ -41,8 +44,34 @@ ${x.category}   ${x.cost}$    ${x.status}</p>
 
 
 
-showResult()
 
+function showResult2() {
+    console.log(Carts);
+    const item = document.querySelector("#item");
+    //const totalCost = document.querySelector("#totalCost");
+    let output = ``;
+
+    Carts.map((x) => output += `<div class="card" style="width:31%; float: left; margin-left:15px; margin-top: 10px" ><img class="card-img-top" src="${x.image}" alt="Card image" width="100%" height="400px"><div class="card-body">
+            <h4 class="card-title">${x.name} <a href="#" class="btn btn-primary stretched-link">Buy</a> </h4><p class="card-text"> 
+${x.category}   ${x.cost}$    ${x.status}</p>
+
+        </div></div>`)
+        item.innerHTML = output
+}
+
+
+Carts=[{
+    id: 3, name: "Rose", releaseDate: new Date(1990, 1, 1), cost: 50, category: 'In Door', stock: 6, status: 'Available', color: 'Red', sun: 'Low', water: '1 times a day', size: 'Small',
+    image: './imgs/product3.jpg', des: 'A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and tens of thousands of cultivars. '
+}]
+
+function addToCart(productId){
+    console.log("hey");
+    console.log(Products[productId-1]);
+    Carts.push(Products[productId-1])
+    console.log(Carts);
+    return Carts
+}
 
 
 function productSearsh() {
@@ -54,7 +83,7 @@ function productSearsh() {
 }
 
 
-
+// export{ addToCart }
 
 
 
