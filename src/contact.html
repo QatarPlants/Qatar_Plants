@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,8 +9,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/bootstrap.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
-    
     <script src='main.js'></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -18,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width:80%;margin-left: 10%;margin-right: 10%;">
         <div class="container-fluid">
@@ -44,25 +44,105 @@
                         <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                       
-                            <button data-bs-toggle="dropdown"  aria-expanded="true" onclick="myFunction()" class="dropbtn nav-link dropdown-toggle">More</button>
-                            <div class="dropdown-menu dropdown-content" id="myDropdown">
-                                <a class="dropdown-item" href="./event.html">Event</a>
-                                <a class="dropdown-item" href="./blog.html">Blog</a>
-                                <a class="dropdown-item" href="./FAQ.html">FAQ</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="./contact.html">Contact Us</a>
-                            </div>
+                        <a class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="true">More</a>
+                        <!-- <a class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" href="#" 
+                            role="button" aria-haspopup="true" aria-expanded="true">Dropdown</a> -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./event.html">Event</a>
+                            <a class="dropdown-item" href="./blog.html">Blog</a>
+                            <a class="dropdown-item" href="./FAQ.html">FAQ</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./contact.html">Contact Us</a>
+                        </div>
                     </li>
                 </ul>
-     
+
                 <form class="d-flex">
-                    <i class="material-icons"  style="font-size:40px;"><a href="./wishlist.html" style="text-decoration: none; color:rgb(243, 118, 118);">favorite</a></i>
+                    <i class="material-icons" style="font-size:40px;"><a href="./wishlist.html"
+                            style="text-decoration: none; color:rgb(243, 118, 118);">favorite</a></i>
                     <input class="form-control me-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
+    <br>
+    <br>
+
+
+    <div class="w3-content">
+        <!-- About Section -->
+        <div>
+            <div style="width: 50%; float: left;">
+                <h2 style=" font-size: '36px', margin-top: '25%'">Get in touch.</h2>
+
+                <p style=" font-size: '36px'">Our team is full of passionate plant parents ready to help. For the fastest
+                    reply, please live chat
+                    us Monday-Friday 9am-9pm ET or fill out this quick form anytime.<br>
+
+                    We're experiencing high volume so it will likely take a few days for us to get back to you —
+                    please
+                    know we respond to each and every message as soon as possible. Thanks for understanding that
+                    our
+                    Customer Happiness team (Andie, Chrissy, Jennipher and others) are working tirelessly to
+                    help each
+                    and every customer as quickly as possible. A few tips:<br>
+
+                    - Add info@green.com to your contacts to ensure our responses land in your inbox, not your
+                    spam
+                    folder.<br>
+
+                    - Reminder: If your plant arrives with cold damage due to shipping carrier delays (shipping
+                    live
+                    plants this time of year can be challenging!), we will replace it. Simply include images
+                    with your
+                    message for the fastest resolution.</p>
+
+
+
+            </div>
+
+            <div style="width: 40%; float: right;">
+
+                <h2 style=" font-size: '36px'">Contact Us</h2>
+
+                <form>
+
+                    <label class="col-form-label mt-4" for="inputDefault">First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name" id="first">
+
+
+                    <label class="col-form-label mt-4" for="inputDefault">Last Name </label>
+                    <input type="text" class="form-control" placeholder="Last Name" id="last">
+
+
+                    <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
